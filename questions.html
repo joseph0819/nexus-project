@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Path Survey</title>
+    <link rel="stylesheet" href="questions.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header id="home">
+        <section class="header">
+            <div class="navbar-container">
+                <div class="logo">
+                    <a href="index.html"><img src="./img/Nexus_logo.png" alt="Nexus Logo"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="questions.html">NexusAi</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+
+    <!-- Introduction Section -->
+    <div class="intro-container">
+        <h2>Welcome to NexusAI Learning Path Survey</h2>
+        <p>
+            At NexusAI, we are dedicated to guiding you on your journey to mastering technology. 
+            Our AI-powered platform helps identify your unique learning path based on your current 
+            skills, interests, and goals. To get the most out of this experience.
+        </p>
+        <p>
+            Once you complete the survey, NexusAI will analyze your responses to curate a personalized 
+            learning path, guiding you through courses, resources, and certifications to achieve your goals.
+        </p>
+        <p>
+            Let's get started!
+        </p>
+    </div>
+
+    <div class="main-container">
+        <h1 class="header">Learning Path Survey</h1>
+        <form>
+            <!-- Basic Information -->
+            <fieldset>
+                <legend>Basic Information</legend>
+                <label for="skill-level">Current skill level in technology:</label>
+                <select id="skill-level" name="skill-level">
+                    <option value="" disabled selected>Select skill level...</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+
+                <label for="education-level">Highest level of education:</label>
+                <select id="education-level" name="education-level">
+                    <option value="" disabled selected>Select education level...</option>
+                    <option value="high-school">High School</option>
+                    <option value="bachelors">Bachelor's Degree</option>
+                    <option value="masters">Master's Degree</option>
+                    <option value="phd">PhD</option>
+                </select>
+
+                <label>Time dedicated to learning each week (hours):</label>
+                <div class="radio-group">
+                    <input type="radio" id="hours-1-5" name="learning-time" value="1-5">
+                    <label for="hours-1-5">1-5</label>
+                    <input type="radio" id="hours-6-10" name="learning-time" value="6-10">
+                    <label for="hours-6-10">6-10</label>
+                    <input type="radio" id="hours-11-15" name="learning-time" value="11-15">
+                    <label for="hours-11-15">11-15</label>
+                    <input type="radio" id="hours-16-20" name="learning-time" value="16-20">
+                    <label for="hours-16-20">16-20</label>
+                </div>
+            </fieldset>
+
+            <!-- Interests and Goals -->
+            <fieldset>
+                <legend>Interests and Goals</legend>
+                <label for="tech-areas">Tech areas of interest:</label>
+                <select id="tech-areas" name="tech-areas">
+                    <option value="" disabled selected>Select tech area...</option>
+                    <option value="web-development">Web Development</option>
+                    <option value="data-science">Data Science</option>
+                    <option value="cybersecurity">Cybersecurity</option>
+                    <option value="ai-ml">AI/ML</option>
+                    <option value="cloud-computing">Cloud Computing</option>
+                </select>
+
+                <label for="career-goals">Specific career goals or job titles:</label>
+                <input type="text" id="career-goals" name="career-goals">
+
+                <label for="industry">Preferred industry:</label>
+                <select id="industry" name="industry">
+                    <option value="" disabled selected>Select industry...</option>
+                    <option value="software-development">Software Development</option>
+                    <option value="fintech">Fintech</option>
+                    <option value="health-tech">Health Tech</option>
+                    <option value="gaming">Gaming</option>
+                    <option value="e-commerce">E-commerce</option>
+                </select>
+            </fieldset>
+
+            <!-- Learning Preferences -->
+            <fieldset>
+                <legend>Learning Preferences</legend>
+                <label for="learning-type">Preferred learning type:</label>
+                <select id="learning-type" name="learning-type">
+                    <option value="" disabled selected>Select learning type...</option>
+                    <option value="structured">Structured Courses</option>
+                    <option value="self-paced">Self-Paced Learning</option>
+                </select>
+
+                <label for="learning-platform">Preferred learning platform:</label>
+                <select id="learning-platform" name="learning-platform">
+                    <option value="" disabled selected>Select learning platform...</option>
+                    <option value="coursera">Coursera</option>
+                    <option value="udemy">Udemy</option>
+                    <option value="edx">edX</option>
+                </select>
+
+                <label for="learning-materials">Preferred learning materials:</label>
+                <select id="learning-materials" name="learning-materials">
+                    <option value="" disabled selected>Select learning materials...</option>
+                    <option value="videos">Videos</option>
+                    <option value="articles">Articles</option>
+                    <option value="hands-on">Hands-on Projects</option>
+                </select>
+            </fieldset>
+
+            <!-- Technical Background -->
+            <fieldset>
+                <legend>Technical Background</legend>
+                <input type="checkbox" id="python" name="programming-languages" value="python">
+                <label for="python">Python</label>
+                <input type="checkbox" id="javascript" name="programming-languages" value="javascript">
+                <label for="javascript">JavaScript</label>
+                <input type="checkbox" id="java" name="programming-languages" value="java">
+                <label for="java">Java</label>
+                <input type="checkbox" id="c++" name="programming-languages" value="c++">
+                <label for="c++">C++</label>
+                <input type="checkbox" id="ruby" name="programming-languages" value="ruby">
+                <label for="ruby">Ruby</label>
+
+                <input type="checkbox" id="git" name="tech-tools" value="git">
+                <label for="git">Git</label>
+                <input type="checkbox" id="docker" name="tech-tools" value="docker">
+                <label for="docker">Docker</label>
+                <input type="checkbox" id="react" name="tech-tools" value="react">
+                <label for="react">React</label>
+                <input type="checkbox" id="angular" name="tech-tools" value="angular">
+                <label for="angular">Angular</label>
+                <input type="checkbox" id="nodejs" name="tech-tools" value="nodejs">
+                <label for="nodejs">Node.js</label>
+
+                <input type="checkbox" id="aws" name="certifications" value="aws">
+                <label for="aws">AWS Certified Solutions Architect</label>
+                <input type="checkbox" id="azure" name="certifications" value="azure">
+                <label for="azure">Microsoft Certified: Azure Administrator</label>
+                <input type="checkbox" id="google-cloud" name="certifications" value="google-cloud">
+                <label for="google-cloud">Google Cloud Professional Data Engineer</label>
+                <input type="checkbox" id="comptia" name="certifications" value="comptia">
+                <label for="comptia">CompTIA Security+</label>
+                <input type="checkbox" id="pmp" name="certifications" value="pmp">
+                <label for="pmp">Project Management Professional (PMP)</label>
+            </fieldset>
+
+            <!-- Budget and Support -->
+            <fieldset>
+                <legend>Budget and Support</legend>
+                <label for="budget">Budget for learning resources (Naira):</label>
+                <input type="text" id="budget" name="budget">
+
+                <label for="certification-goals">Interested in certification goals?</label>
+                <div class="radio-group">
+                    <input type="radio" id="cert-yes" name="certification-goals" value="yes">
+                    <label for="cert-yes">Yes</label>
+                    <input type="radio" id="cert-no" name="certification-goals" value="no">
+                    <label for="cert-no">No</label>
+                </div>
+
+                <label for="scholarships">Interested in scholarship opportunities?</label>
+                <div class="radio-group">
+                    <input type="radio" id="scholarship-yes" name="scholarships" value="yes">
+                    <label for="scholarship-yes">Yes</label>
+                    <input type="radio" id="scholarship-no" name="scholarships" value="no">
+                    <label for="scholarship-no">No</label>
+                </div>
+            </fieldset>
+
+            <!-- Submit button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="contact-info">
+                <h1>Contact Information:</h1>
+                <ul>
+                    <li>Email: support@techpathsystem.com</li>
+                    <li>Phone: +123-456-7890</li>
+                    <li>Social Media:
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="links">
+                <h1>Quick Links:</h1>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="questions.html">NexusAi</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            
+            <p><i>&copy; Copyright NexusAI 2024. All rights reserved.</i></p>
+        </div>
+    </footer>
+</body>
+</html>
