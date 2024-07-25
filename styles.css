@@ -97,7 +97,20 @@ nav a:hover {
     border-radius: 5px;
     transition: background 0.3s ease-in-out;
 }
-
+.get-started {
+    background: #27AE60;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+}
+.get-started:hover {
+    background: #218c53;
+}
+}
 .signup-btn {
     background: #27AE60;
     color: white;
