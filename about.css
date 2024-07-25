@@ -1,5 +1,3 @@
-/* styles.css */
-
 /* Body styles */
 body {
     font-family: Arial, sans-serif;
@@ -15,7 +13,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px;
+    padding: 0 20px;
     position: fixed;
     top: 0;
     left: 0;
@@ -29,32 +27,74 @@ body {
     height: 80px;
 }
 
-nav ul {
+.menu-toggle {
+    display: none;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav ul {
     display: flex;
     gap: 30px;
     font-size: 18px;
     font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
 
-nav li {
+.nav li {
     list-style-type: none;
 }
 
-nav a {
+.nav a {
     text-decoration: none;
     color: gray;
     transition: color 0.3s ease-in-out;
 }
 
-nav a:hover {
+.nav a:hover {
     color: #27AE60;
 }
 
-/* About Container styles */
-.about-container {
-    max-width: 800px;
-    margin: 120px auto 20px; /* Adjusted margin-top to prevent overlap */
-    padding: 20px;
+.close-btn {
+    display: none;
+}
+
+/* Introduction Section */
+.intro {
+    margin-top: 40px; 
+    background: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: -40px;
+}
+
+.intro-text h1 {
+    font-size: 36px;
+    color: #27AE60;
+}
+
+.intro-text p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    padding: 0 170px;
+}
+
+/* Cards Section */
+.cards-section {
+    padding: 60px 20px;
+    background: #fff;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .card {
@@ -62,20 +102,70 @@ nav a:hover {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+    transition: transform 0.3s ease-in-out;
 }
 
-.card h2, .card h3 {
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h3 {
     color: #27AE60;
-    margin-top: 0;
+    margin: 20px 0 10px;
 }
 
-.card p, .card ul {
+.card p {
     color: #757575;
 }
 
-.card ul {
-    padding-left: 20px;
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Additional Information Section */
+.additional-info {
+    padding: 60px 20px;
+    background: #f9f9f9;
+}
+
+.info-text {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.info-text p {
+    font-size: 18px;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.info-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.info-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.info-card h3 {
+    color: #27AE60;
+    margin: 20px 0;
+}
+
+.info-card p {
+    color: #757575;
 }
 
 /* FOOTER SECTION */
@@ -107,6 +197,7 @@ footer h1 {
 
 footer ul {
     list-style-type: none;
+    padding: 0;
 }
 
 footer li {
@@ -122,6 +213,7 @@ footer a {
 footer a:hover {
     color: #27AE60;
 }
+
 .footer-bottom {
     text-align: center;
     border-top: 1px solid #333;
@@ -129,23 +221,58 @@ footer a:hover {
     font-size: 16px;
 }
 
-
 /* Responsive styles */
 @media (max-width: 800px) {
-    .about-container {
-        max-width: 600px;
-        padding: 15px;
+    .intro-text h1 {
+        font-size: 28px;
+    }
+
+    .intro-text p {
+        font-size: 18px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-card {
+        width: 90%;
     }
 }
 
 @media (max-width: 600px) {
-    .about-container {
-        max-width: 400px;
+    .navbar-container {
+        padding: 0 10px;
     }
-}
 
-@media (max-width: 400px) {
-    .about-container {
-        max-width: 300px;
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 16px;
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .close-btn {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .info-card img {
+        max-width: 100%;
     }
 }

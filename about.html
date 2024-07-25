@@ -14,7 +14,10 @@
                 <div class="logo">
                     <a href="index.html"><img src="./img/Nexus_logo.png" alt="Nexus Logo"></a>
                 </div>
-                <nav>
+                <div class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav class="nav" id="nav">
                     <ul>
                         <li><a href="about.html">About</a></li>
                         <li><a href="questions.html">NexusAi</a></li>
@@ -22,78 +25,59 @@
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="faq.html">FAQ</a></li>
                     </ul>
+                    <div class="close-btn" id="close-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
                 </nav>
             </div>
         </section>
     </header>
 
-    <!-- About Us Section -->
-    <div class="about-container">
-        <div class="card">
-            <h2>About NexusAI</h2>
-            <p>
-                Welcome to NexusAI, your trusted partner in navigating the ever-evolving world of technology. 
-                We believe that everyone has the potential to excel in tech, and our mission is to make this journey 
-                as seamless and personalized as possible.
-            </p>
-            <p>
-                NexusAI is built on the foundation of innovation, dedication, and a deep understanding of the tech industry. 
-                Our platform leverages cutting-edge AI technology to create customized learning paths that align with your 
-                interests, skill levels, and career aspirations.
-            </p>
+    <!-- Introduction Section -->
+    <section class="intro">
+        <div class="intro-text">
+            <h1>Welcome to NexusAI</h1>
+            <p>At NexusAI, we are dedicated to refining tech education by offering personalized and AI-driven learning experiences. Our platform is designed to make tech skills accessible to everyone. By leveraging modern technology, we create tailored learning paths that align with your career goals and interests. </p>
         </div>
+    </section>
 
-        <div class="card">
-            <h3>Our Vision</h3>
-            <p>
-                At NexusAI, our vision is to democratize tech education by providing accessible and personalized learning 
-                experiences for everyone, regardless of their background or starting point. We aim to bridge the gap between 
-                learning and career success, empowering individuals to achieve their full potential in the tech industry.
-            </p>
+    <!-- Cards Section -->
+    <section class="cards-section">
+        <div class="card-container">
+            <div class="card">
+                <img src="./img/pexels-michelangelo-buonarroti-8728562.jpg" alt="Mission">
+                <h3>Our Mission</h3>
+                <p>To provide AI-driven, personalized learning paths for tech enthusiasts and professionals.</p>
+            </div>
+            <div class="card">
+                <img src="./img/pexels-pavel-danilyuk-8439093.jpg" alt="Vision">
+                <h3>Our Vision</h3>
+                <p>To be a leader in tech education, making advanced learning accessible to all.</p>
+            </div>
+            <div class="card">
+                <img src="./img/student.jpg" alt="Values">
+                <h3>Our Values</h3>
+                <p>Innovation, Integrity, Excellence, Inclusivity, and Community.</p>
+            </div>
         </div>
+    </section>
 
-        <div class="card">
-            <h3>Our Mission</h3>
-            <p>
-                Our mission is to:
-                <ul>
-                    <li>Empower learners with AI-driven personalized learning paths.</li>
-                    <li>Provide access to high-quality resources and courses from top providers.</li>
-                    <li>Support career transitions and upskilling with relevant certifications.</li>
-                    <li>Foster a community of lifelong learners and tech enthusiasts.</li>
-                </ul>
-            </p>
+    <!-- Additional Information Section -->
+    <section class="additional-info">
+        <div class="info-text">
+            <p>NexusAI is dedicated to transforming the way tech education is approached. Our innovative platform 
+            uses AI to tailor learning experiences, ensuring that each user has a unique and effective learning journey. 
+            We believe in the power of personalized education to unlock potential and drive career success in the tech world.</p>
         </div>
+        <div class="card info-card">
+            <img src="./img/pexels-divinetechygirl-1181681.jpg" alt="About NexusAI">
+            <h3>About NexusAI</h3>
+            <p>Discover how NexusAI is changing the landscape of tech education with our cutting-edge platform and dedicated team.</p>
+        </div>
+    </section>
 
-        <div class="card">
-            <h3>Our Values</h3>
-            <p>
-                NexusAI is guided by a set of core values that drive our work and shape our culture:
-                <ul>
-                    <li><strong>Innovation:</strong> Continuously exploring new technologies and methods to enhance learning experiences.</li>
-                    <li><strong>Integrity:</strong> Upholding the highest standards of honesty and transparency in all our interactions.</li>
-                    <li><strong>Excellence:</strong> Striving for the highest quality in our products, services, and customer support.</li>
-                    <li><strong>Inclusivity:</strong> Promoting diversity and inclusion in tech education and the workplace.</li>
-                    <li><strong>Community:</strong> Building a supportive and collaborative network of learners, educators, and industry professionals.</li>
-                </ul>
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Our Team</h3>
-            <p>
-                Our team comprises passionate professionals from various fields, including education, technology, data science, 
-                and career development. Together, we are committed to making tech education more personalized, accessible, 
-                and impactful for everyone.
-            </p>
-            <p>
-                Thank you for choosing NexusAI. We are excited to be part of your learning journey and look forward to helping 
-                you achieve your goals.
-            </p>
-        </div>
-    </div>
-     <!-- Footer -->
-     <footer id="footer">
+    <!-- Footer -->
+    <footer id="footer">
         <div class="footer-container">
             <div class="contact-info">
                 <h1>Contact Information:</h1>
@@ -118,12 +102,10 @@
             </div>
         </div>
         <div class="footer-bottom">
-            
             <p><i>&copy; Copyright NexusAI 2024. All rights reserved.</i></p>
         </div>
     </footer>
-</body>
-</html>
 
+    <script src="script.js"></script>
 </body>
 </html>

@@ -18,26 +18,40 @@
                     <a href="index.html"><img src="./img/Nexus_logo.png" alt="Nexus Logo"></a>
                 </div>
                 <nav>
-                    <ul>
+                    <ul class="nav-links">
                         <li><a href="about.html">About</a></li>
                         <li><a href="questions.html">NexusAi</a></li>
                         <li><a href="testimonials.html">Testimonials</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="faq.html">FAQ</a></li>
                     </ul>
+                    <div class="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </div>
                 </nav>
+                <div class="sidebar">
+                    <div class="close-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <ul class="sidebar-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="questions.html">NexusAi</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
             </div>
         </section>
 
+        <!-- HERO SECTION -->
         <section class="hero-section">
             <div class="hero-image">
                 <div class="hero-text">
                     <h1>Empower Your Tech Journey</h1>
                     <p>Personalized Learning Paths Tailored Just For You.</p>
                     <div class="button-group">
-                        <!-- <a href="signup.html" class="hero-btn signup-btn">Sign Up</a>
-                        <a href="login.html" class="hero-btn login-btn">Login</a> -->
-                        <a href="https://nexusai.streamlit.app" class="get-started">Get Started</a>
+                        <a href="https://nexusai.streamlit.app/" target="_blank" rel="noopener noreferrer"  class="hero-btn get-started-btn">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -66,18 +80,27 @@
                 <div class="user">
                     <figure>
                         <img src="./img/pexels-michelangelo-buonarroti-8728562.jpg" alt="User 1">
-                        <figcaption>Person 1</figcaption>
+                        <figcaption>Tech Enthusiast</figcaption>
                         <p>
-                            <span class="bold">Tech Enthusiast:</span> "This platform made my entry into tech smooth and exciting!"
+                            This platform made my entry into tech smooth
                         </p>
                     </figure>
                 </div>
                 <div class="user">
                     <figure>
                         <img src="./img/pexels-pavel-danilyuk-8439093.jpg" alt="User 2">
-                        <figcaption>Person 2</figcaption>
+                        <figcaption>Career Switch</figcaption>
                         <p>
-                            <span class="bold">Career Switch:</span> "I transitioned into a tech career seamlessly with their personalized paths."
+                        I transitioned into a tech career seamlessly with their personalized paths
+                        </p>
+                    </figure>
+                </div>
+                <div class="user">
+                    <figure>
+                        <img src="./img/student.jpg" alt="User 3">
+                        <figcaption>Developer</figcaption>
+                        <p>
+                        The guidance I received was invaluable for my career growth
                         </p>
                     </figure>
                 </div>
@@ -85,7 +108,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer id="footer">
         <div class="footer-container">
             <div class="contact-info">
@@ -111,10 +134,10 @@
             </div>
         </div>
         <div class="footer-bottom">
-            
             <p><i>&copy; Copyright NexusAI 2024. All rights reserved.</i></p>
         </div>
     </footer>
-    
+
+    <script src="script.js"></script>
 </body>
 </html>
