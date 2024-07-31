@@ -229,6 +229,7 @@ footer a:hover {
 
     .intro-text p {
         font-size: 18px;
+        padding: 0 10px;
     }
 
     .card-container {
@@ -243,6 +244,12 @@ footer a:hover {
 
 @media (max-width: 600px) {
     .navbar-container {
+        padding: 0 10px;
+    }
+    .intro-text p {
+        font-size: 18px;
+        font-weight: 500;
+        color: #333;
         padding: 0 10px;
     }
 
